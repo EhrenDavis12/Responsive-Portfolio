@@ -1,0 +1,61 @@
+@import './assets/style.css';
+
+@media screen and (max-width: 980px) {
+    /* :root{
+        --work_space_width: 758px;
+    }
+    .main_menu{
+        margin-left: 500;
+        padding-top: 50px;
+      } */
+
+      .header_bar_hidden{
+          width: auto;
+          margin: 0px 20px;
+      }
+
+      .work_space{
+          width:auto;
+          margin: var(--work_space_margin);
+          margin-bottom: 100px;
+      }
+  }
+
+/*   @media screen and (max-width: 768px) {
+    :root{
+        --work_space_width: 630px;
+    }
+  }*/
+
+@media screen and (max-width: 640px) {
+    .name_box{
+        width: 100%;
+        height: 50%;
+        display: block;
+        clear: both;
+        padding: 10px;
+    }
+
+    .header_bar_hidden{
+        margin: 0px;
+        height: 80px;
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+
+    .main_menu{
+        width: 100%;
+        display: block;
+        clear: both;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        
+        right: 0px;
+        top: 50px;
+        
+    }
+} 

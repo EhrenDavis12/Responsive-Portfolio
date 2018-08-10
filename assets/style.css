@@ -36,6 +36,7 @@ footer{
   text-align: center;
   padding-top: 40px;
   margin-top: 100px;
+  z-index: 2;
 
   position: fixed;
   left: 0;
@@ -73,6 +74,7 @@ a:active {
   text-align: center;
   background-color: var(--header_bkg_color);
   width: var(--work_space_width);
+  position: relative;
 }
 
 .name_box{
@@ -89,8 +91,10 @@ a:active {
 .main_menu{
   font-family: var(--other_fonts);
   color: var(--font_color);
-  margin-left: 775px;
   padding-top: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .work_space{
@@ -142,23 +146,27 @@ a:active {
   clear: both;
 }
 
-.portfolio_img{
-  margin: var(--work_space_margin);
-  border-style: solid;
-  border-width: 5px;
-  border-color: var(--content_border_color); 
+.card{
+  position: relative;
   float: left;
   height: var(--image_height);
   width: var(--image_width);
+  border-color: var(--content_border_color);
+  margin: var(--work_space_margin);
+  border-style: solid;
+  border-width: 5px;
 }
 
-.portfolio_img:hover{
-  opacity: 0.5;
-  border-color: var(--main_color); 
+.portfolio_img{
+  height: var(--image_height);
+  width: var(--image_width);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .portfolio_text{
-  float: left;
   font-family: var(--other_fonts);
   color: var(--content_bkg_color);  
   background-color: var(--main_color);
@@ -167,9 +175,10 @@ a:active {
   padding-bottom: 10px;
   height: 20px;
   text-align: center;
-  position: relative;
-  left: calc((var(--image_width) + var(--work_space_margin) + 5px ) * -1);
-  top: calc(var(--image_height) - 15px);
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .email_form{
